@@ -17,15 +17,25 @@ export default function Footer()
 
             <div className="md:flex md:justify-between sm:px-48 px-4 py-7">
                 <div className="md:flex  md:justify-between">
-                <img src="/white_logo.png" className="h-8 w-66"/>
+                <a href="/"><img src="/white_logo.png" className="h-8 w-66"/></a>
                 {/* <h1 className="mt-2 font-bold">Accountant AI</h1> */}
                 </div>
                 <div className="md:flex md:justify-between mt-4">
-                    <img src="/Instagram.png" className="h-5 w-5"/>&nbsp;&nbsp;
-                    <img src="/facebook.png" className="h-5 w-5"/>&nbsp;&nbsp;
-                    <img src="/twitter.png" className="h-5 w-5"/>&nbsp;&nbsp;
-                    <img src="/linkedin.png" className="h-5 w-5"/>&nbsp;&nbsp;
-                    <img src="/youtube.png" className="h-5 w-7"/>&nbsp;&nbsp;
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/Instagram.png" className="h-5 w-5"/>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/facebook.png" className="h-5 w-5 ml-2"/>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/twitter.png" className="h-5 w-5 ml-2"/>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/linkedin.png" className="h-5 w-5 ml-2"/>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/youtube.png" className="h-5 w-7 ml-2"/>
+                    </a>
                 </div>
             </div>  
 
@@ -38,31 +48,29 @@ export default function Footer()
                     <div className="col-sm-4">              
                         <h6 className="text-xl font-boldvm mb-5">Usefull Link</h6>  
                         <hr className="border-gray-600 sm:px-32"/>             
-                        <h5 className="mt-10"><Link href="comming_soon">Solution</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Industries</Link></h5>       
-                        <h5 className="mt-2"><Link href="comming_soon">Products</Link></h5>      
-                        <h5 className="mt-2"><Link href="comming_soon">Resources</Link></h5>           
-                        <h5 className="mt-2"><Link href="comming_soon">Pricing</Link></h5>           
+                        <h5 className="mt-10"><Link href="">Solution</Link></h5>
+                        <h5 className="mt-2"><Link href="">Industries</Link></h5>       
+                        <h5 className="mt-2"><Link href="">Products</Link></h5>      
+                        <h5 className="mt-2"><Link href="">Resources</Link></h5>           
+                        <h5 className="mt-2"><Link href="pricing">Pricing</Link></h5>           
                     </div>
                     <div className="col-sm-4">
                         <h6 className="text-xl font-bold mb-5">Service</h6>
                         <hr className="border-gray-600 sm:px-32"/>
-                        <h5 className="mt-10"><Link href="comming_soon">Sale</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Marketing</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Real Estate</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Autimotive</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Education</Link></h5>
+                        <h5 className="mt-10"><Link href="">Sale</Link></h5>
+                        <h5 className="mt-2"><Link href="">Marketing</Link></h5>
+                        <h5 className="mt-2"><Link href="">Real Estate</Link></h5>
+                        <h5 className="mt-2"><Link href="">Autimotive</Link></h5>
+                        <h5 className="mt-2"><Link href="">Education</Link></h5>
                     </div>
                     <div className="col-sm-4">
                         <h6 className="text-xl font-bold mb-5">Contact Us</h6>
                         <hr className="border-gray-600 sm:px-32"/>
-                        <h5 className="mt-10"><Link href="comming_soon">Bookkeeping</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">E-commerce</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Point of sales(POS)</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Email</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">WhatsApp</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">Fill Storage</Link></h5>
-                        <h5 className="mt-2"><Link href="comming_soon">SMS</Link></h5>
+                        <h5 className="mt-10"><Link href="">1700 W Blancke St, kiyev</Link></h5>
+                        <h5 className="mt-2"><Link href="">port south USA, American</Link></h5>
+                        <h5 className="mt-2"><Link href="">&nbsp;</Link></h5>
+                        <h5 className="mt-2"><Link href="">+3255 456 789</Link></h5>
+                        <h5 className="mt-2"><Link href="">mail@primarily.com</Link></h5>
                     </div>
                     <div className="col-sm-4">
                         <h6 className="text-xl font-bold mb-5">Our Latest News</h6>

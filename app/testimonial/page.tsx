@@ -8,14 +8,14 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Testimonial = () => {
   return (
     <React.Fragment>
-    <section className="text-gray-900 bg-white body-font relative">
+    <section className="bg-white text-gray-900 body-font relative">
 
     <div className="flex flex-col text-center w-full py-20 px-40">
         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Testimonial</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur. Blandit consequat auctor penatibus id adipiscing phasellus a lacus scelerisque. Vulputate ipsum lectus leo nunc.</p>
     </div>
 
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
+  <div className="container ml-48 py-24 mx-auto flex flex-wrap">
     <div className="flex flex-wrap w-full">
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
         
@@ -60,30 +60,27 @@ const Testimonial = () => {
       {/* <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-100" src="./phone.png" alt="step"/> */}
       {/* block opacity-25 absolute inset-0 */}
 
-      <div className="w-1/2">
-          <div className="w-1/2 flex flex-wrap w-full bg-gray-100 relative">
-            
-            <div className="lg:w-1/2 relative z-10 w-full sm:px-10 py-16">
-              <h2 className="text-3xl font-bold text-gray-900 title-font mb-2">The Perfect CRM Software: Boost Your Field Sales Team’s Efficiency</h2>
-              <p className="leading-relaxed text-[#3BA3C8]">Depending on the Sales Approaches Standardize a Marketing Process</p>
-              <p className="leading-relaxed">Unique and powerful suite of software to run your entire business, brought to you by a company.</p>
-              <a className="mt-3 text-indigo-500 inline-flex items-center">
-                <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
-              </a>
+      <div className="w-1/2 flex flex-wrap">
+          <div className="w-1/2 rounded-3xl rounded-r flex flex-wrap w-full bg-gray-100 relative">
+          <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./phone.png"/>
+          <div className="text-left relative z-10 w-full">
+          <div className="flex relative pb-12 mt-20">
+            <div className="px-12 flex-grow">
+              <h2 className="font-bold title-font text-3xl text-gray-900 mb-1">The Perfect CRM Software: <br/>Boost Your Field Sales Team’s <br/>Efficiency</h2>
+              <p className="leading-relaxed text-lg mt-7 mb-10 text-[#3BA3C8]">Depending on the Sales Approaches Standardize <br/>a Marketing Process</p>
+              <p className="leading-relaxed text-sm mb-10">Unique and powerful suite of software to run your entire <br/>business, brought to you by a company.</p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
+                </a>
             </div>
-            
-            <img className="lg:w-1/2" src="./phone.png"/>
           </div>
-          
+          </div>
+          </div>
       </div>
 
     </div>
   </div>
   </section>
-
-
-
-
 
 
 
@@ -141,23 +138,6 @@ const Testimonial = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-   
 
 
 

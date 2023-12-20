@@ -15,7 +15,7 @@ export default function Home() {
 <section className="bg-white text-gray-600 body-font">
   <div className="container mx-auto flex flex-wrap">
     <div className="lg:w-full lg:h-full mx-auto">
-      <div className="flex flex-wrap w-full h-full bg-white py-32 relative">
+      <div className="flex flex-wrap w-full h-full bg-white py-52 relative">
         <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./index.png"/>
         <div className="px-40 text-left relative z-10 w-full">
         {/* <div className="flex relative pb-12 mt-20"> */}
@@ -40,7 +40,7 @@ export default function Home() {
 
 
 <section className="bg-white text-gray-900 body-font sm:px-48">
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container px-5 py-24 mx-auto border-t border-gray-200">
     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
       <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Explore Premium Features</h1>
       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
@@ -367,72 +367,73 @@ export default function Home() {
 
 
 
-<section className="bg-white sm:px-40">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
-    <div className="flex flex-wrap w-full">
-      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-        
-        <div className="flex relative pb-12">
-          <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
-            <p className="leading-relaxed">Unique and powerful suite of software to run your business, brought to you by  vision to you work.</p>
-          </div>
-        </div>
-
-        <div className="flex relative pb-12">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-            <h1 className="font-bold text-2xl text-[#47CFFF]">01</h1>
-          </div>
-          <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">Download Our App</h2>
-            <p className="leading-relaxed">CentraHub CRM automatically logs in any reactions made by your leads, prospects</p>
-          </div>
-        </div>
-
-        <div className="flex relative pb-12">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-            <h1 className="font-bold text-2xl text-[#47CFFF]">02</h1>
-          </div>
-          <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">List Your Company Detail</h2>
-            <p className="leading-relaxed">Customers making it easier for your sales team members audience they make contact.</p>
-          </div>
-        </div>
-
-        <div className="flex relative pb-12">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-            <h1 className="font-bold text-2xl text-[#47CFFF]">03</h1>
-          </div>
-          <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">Enjoy Your Business</h2>
-            <p className="leading-relaxed">customers, making it easier for your sales team members audience before make contact.</p>
-          </div>
-        </div>
-
+<section className="bg-white text-gray-900 body-font relative">
+<div className="container ml-48 py-24 mx-auto flex flex-wrap">
+<div className="flex flex-wrap w-full">
+  <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+    
+    <div className="flex relative pb-12">
+      <div className="flex-grow pl-4">
+        <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
+        <p className="leading-relaxed">Unique and powerful suite of software to run your business, brought to you by  vision to you work.</p>
       </div>
-      {/* <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-100" src="./phone.png" alt="step"/> */}
-      {/* block opacity-25 absolute inset-0 */}
-
-      <div className="w-1/2">
-          <div className="w-1/2 flex flex-wrap w-full bg-gray-100 relative">
-            
-            <div className="lg:w-1/2 relative z-10 w-full sm:px-10 py-16">
-              <h2 className="text-3xl font-bold text-gray-900 title-font mb-2">The Perfect CRM Software: Boost Your Field Sales Team’s Efficiency</h2>
-              <p className="leading-relaxed text-[#3BA3C8]">Depending on the Sales Approaches Standardize a Marketing Process</p>
-              <p className="leading-relaxed">Unique and powerful suite of software to run your entire business, brought to you by a company.</p>
-              <a className="mt-3 text-indigo-500 inline-flex items-center">
-                <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
-              </a>
-            </div>
-            
-            <img className="lg:w-1/2" src="./phone.png"/>
-          </div>
-          
-      </div>
-
     </div>
+
+    <div className="flex relative pb-12">
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+        <h1 className="font-bold text-2xl text-[#47CFFF]">01</h1>
+      </div>
+      <div className="flex-grow pl-4">
+        <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">Download Our App</h2>
+        <p className="leading-relaxed">CentraHub CRM automatically logs in any reactions made by your leads, prospects</p>
+      </div>
+    </div>
+
+    <div className="flex relative pb-12">
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+        <h1 className="font-bold text-2xl text-[#47CFFF]">02</h1>
+      </div>
+      <div className="flex-grow pl-4">
+        <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">List Your Company Detail</h2>
+        <p className="leading-relaxed">Customers making it easier for your sales team members audience they make contact.</p>
+      </div>
+    </div>
+
+    <div className="flex relative pb-12">
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+        <h1 className="font-bold text-2xl text-[#47CFFF]">03</h1>
+      </div>
+      <div className="flex-grow pl-4">
+        <h2 className="font-bold title-font text-xl text-gray-900 mb-1 tracking-wider">Enjoy Your Business</h2>
+        <p className="leading-relaxed">customers, making it easier for your sales team members audience before make contact.</p>
+      </div>
+    </div>
+
   </div>
-  </section>
+  {/* <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-100" src="./phone.png" alt="step"/> */}
+  {/* block opacity-25 absolute inset-0 */}
+
+  <div className="w-1/2 flex flex-wrap">
+      <div className="w-1/2 rounded-3xl rounded-r flex flex-wrap w-full bg-gray-100 relative">
+      <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./phone.png"/>
+      <div className="text-left relative z-10 w-full">
+      <div className="flex relative pb-12 mt-20">
+        <div className="px-12 flex-grow">
+          <h2 className="font-bold title-font text-3xl text-gray-900 mb-1">The Perfect CRM Software: <br/>Boost Your Field Sales Team’s <br/>Efficiency</h2>
+          <p className="leading-relaxed text-lg mt-7 mb-10 text-[#3BA3C8]">Depending on the Sales Approaches Standardize <br/>a Marketing Process</p>
+          <p className="leading-relaxed text-sm mb-10">Unique and powerful suite of software to run your entire <br/>business, brought to you by a company.</p>
+            <a className="mt-3 text-indigo-500 inline-flex items-center">
+              <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
+            </a>
+        </div>
+      </div>
+      </div>
+      </div>
+  </div>
+
+</div>
+</div>
+</section>
 
 
 

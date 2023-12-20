@@ -5,22 +5,22 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Header = () => {
   return (
       <Popover className={"mx-auto flex items-center sm:px-12 px-6 py-2 h-24 bg-white"}>
-        <img src="/logo.png" width="50" height="50"></img>
-        <h1 className="font-bold">Accountant AI</h1>
+        <a href="/"><img src="/logo.png" width="50" height="50"></img></a>
+        <a href="/"><h1 className="font-bold">Accountant AI</h1></a>
         <div className="grow">
           <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
-            <Link href="" className="font-bold">About</Link>
+            <Link href="about" className="font-bold">About</Link>
             <Link href="" className="font-bold">Services</Link>
-            <Link href="" className="font-bold">Features</Link>
-            <Link href="" className="font-bold">Testimonial</Link>
-            <Link href="" className="font-bold">Blog</Link>
-            <Link href="" className="font-bold">Early Access</Link>
-            <Link href="" className="font-bold">Pricing</Link>
+            <Link href="features" className="font-bold">Features</Link>
+            <Link href="testimonial" className="font-bold">Testimonial</Link>
+            <Link href="blog" className="font-bold">Blog</Link>
+            <Link href="early_access" className="font-bold">Early Access</Link>
+            <Link href="pricing" className="font-bold">Pricing</Link>
           </div>
         </div>
 
@@ -58,13 +58,13 @@ const Header = () => {
 
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">About</Link>
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="about">About</Link>
                   <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Services</Link>  
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Features</Link>  
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Testimonial</Link>
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Blog</Link>  
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Early Access</Link>
-                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="">Pricing</Link>
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="features">Features</Link>  
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="testimonial">Testimonial</Link>
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="blog">Blog</Link>  
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="early_access">Early Access</Link>
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="pricing">Pricing</Link>
                 </nav>
               </div>
               
