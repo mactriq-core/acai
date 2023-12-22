@@ -24,8 +24,8 @@ export default function Home() {
             <p className="leading-relaxed mt-8 mb-10">Provide excellent customer service. Answer more tickets <br/>all-in-one Primarily software.</p>
             <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
             <button type="button" className="text-black rounded py-3 px-8 leading-6 bg-[#FFFFFF]">How It Work</button>
-          {/* </div> */}
-        </div>
+          </div>
+        {/* </div> */}
         </div>
       </div>
       
@@ -368,10 +368,23 @@ export default function Home() {
 
 
 <section className="bg-white text-gray-900 body-font relative">
-<div className="container ml-48 py-24 mx-auto flex flex-wrap">
-<div className="flex flex-wrap w-full">
-  <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-    
+<div className="py-24 mx-auto flex flex-wrap">
+{/* <div className="flex flex-wrap w-full"> */}
+
+  <div className="md:w-1/6 sm:mb-0 mb-6">
+    {/* <div className="rounded-lg h-64 overflow-hidden">
+      <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503"/>
+    </div>
+    <h2 className="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+    <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+    <a className="text-indigo-500 inline-flex items-center mt-3">Learn More
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </a> */}
+  </div>
+
+  <div className="md:py-6 md:w-1/3 sm:mb-0 mb-6">
     <div className="flex relative pb-12">
       <div className="flex-grow pl-4">
         <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
@@ -408,12 +421,9 @@ export default function Home() {
         <p className="leading-relaxed">customers, making it easier for your sales team members audience before make contact.</p>
       </div>
     </div>
-
   </div>
-  {/* <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-100" src="./phone.png" alt="step"/> */}
-  {/* block opacity-25 absolute inset-0 */}
 
-  <div className="w-1/2 flex flex-wrap">
+  <div className="md:w-1/2 sm:mb-0 mb-6 flex flex-wrap">
       <div className="w-1/2 rounded-3xl rounded-r flex flex-wrap w-full bg-gray-100 relative">
       <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./phone.png"/>
       <div className="text-left relative z-10 w-full">
@@ -431,9 +441,10 @@ export default function Home() {
       </div>
   </div>
 
-</div>
+{/* </div> */}
 </div>
 </section>
+
 
 
 

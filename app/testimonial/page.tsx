@@ -5,20 +5,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+
 const Testimonial = () => {
   return (
     <React.Fragment>
-    <section className="bg-white text-gray-900 body-font relative">
+  <section className="bg-white text-gray-900 body-font relative">
 
     <div className="flex flex-col text-center w-full py-20 px-40">
         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Testimonial</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur. Blandit consequat auctor penatibus id adipiscing phasellus a lacus scelerisque. Vulputate ipsum lectus leo nunc.</p>
     </div>
+  
+  <div className="py-24 mx-auto flex flex-wrap">
+    {/* <div className="flex flex-wrap w-full"> */}
 
-  <div className="container ml-48 py-24 mx-auto flex flex-wrap">
-    <div className="flex flex-wrap w-full">
-      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-        
+      <div className="md:w-1/6 sm:mb-0 mb-6">
+        {/* <div className="rounded-lg h-64 overflow-hidden">
+          <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503"/>
+        </div>
+        <h2 className="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+        <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a className="text-indigo-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a> */}
+      </div>
+
+      <div className="md:py-6 md:w-1/3 sm:mb-0 mb-6">
         <div className="flex relative pb-12">
           <div className="flex-grow pl-4">
             <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
@@ -55,12 +69,9 @@ const Testimonial = () => {
             <p className="leading-relaxed">customers, making it easier for your sales team members audience before make contact.</p>
           </div>
         </div>
-
       </div>
-      {/* <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-100" src="./phone.png" alt="step"/> */}
-      {/* block opacity-25 absolute inset-0 */}
 
-      <div className="w-1/2 flex flex-wrap">
+      <div className="md:w-1/2 sm:mb-0 mb-6 flex flex-wrap">
           <div className="w-1/2 rounded-3xl rounded-r flex flex-wrap w-full bg-gray-100 relative">
           <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./phone.png"/>
           <div className="text-left relative z-10 w-full">
@@ -69,7 +80,7 @@ const Testimonial = () => {
               <h2 className="font-bold title-font text-3xl text-gray-900 mb-1">The Perfect CRM Software: <br/>Boost Your Field Sales Team’s <br/>Efficiency</h2>
               <p className="leading-relaxed text-lg mt-7 mb-10 text-[#3BA3C8]">Depending on the Sales Approaches Standardize <br/>a Marketing Process</p>
               <p className="leading-relaxed text-sm mb-10">Unique and powerful suite of software to run your entire <br/>business, brought to you by a company.</p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a className="mt-3 inline-flex ">
                   <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
                 </a>
             </div>
@@ -78,7 +89,7 @@ const Testimonial = () => {
           </div>
       </div>
 
-    </div>
+    {/* </div> */}
   </div>
   </section>
 
@@ -111,25 +122,25 @@ const Testimonial = () => {
     </div>
 
     <div className="container px-5 mt-14 mb-10 border-t border-gray-500 mx-auto">
-    <div className="flex flex-wrap -m-4 mt-8 text-center">
-      <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl">4.9<span className="text-[#47CFFF]">/</span>5</h2>
-        <p className="leading-relaxed">User Rating</p>
-      </div>
-      <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl">350<span className="text-[#FFB545]">K</span>+</h2>
-        <p className="leading-relaxed">Customers</p>
-      </div>
-      <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl">99<span className="text-[#47DD56]">+</span></h2>
-        <p className="leading-relaxed">Team Members</p>
-      </div>
-      <div className="p-4 sm:w-1/4 w-1/2">
-        <h2 className="title-font font-medium sm:text-4xl text-3xl">41<span className="text-[#FF5454]">M</span></h2>
-        <p className="leading-relaxed">Current Users</p>
+      <div className="flex flex-wrap -m-4 mt-8 text-center">
+        <div className="p-4 sm:w-1/4 w-1/2">
+          <h2 className="title-font font-medium sm:text-4xl text-3xl">4.9<span className="text-[#47CFFF]">/</span>5</h2>
+          <p className="leading-relaxed">User Rating</p>
+        </div>
+        <div className="p-4 sm:w-1/4 w-1/2">
+          <h2 className="title-font font-medium sm:text-4xl text-3xl">350<span className="text-[#FFB545]">K</span>+</h2>
+          <p className="leading-relaxed">Customers</p>
+        </div>
+        <div className="p-4 sm:w-1/4 w-1/2">
+          <h2 className="title-font font-medium sm:text-4xl text-3xl">99<span className="text-[#47DD56]">+</span></h2>
+          <p className="leading-relaxed">Team Members</p>
+        </div>
+        <div className="p-4 sm:w-1/4 w-1/2">
+          <h2 className="title-font font-medium sm:text-4xl text-3xl">41<span className="text-[#FF5454]">M</span></h2>
+          <p className="leading-relaxed">Current Users</p>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </section>
 

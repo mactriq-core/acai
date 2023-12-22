@@ -22,7 +22,7 @@ export default function Footer()
                 </div>
                 <div className="md:flex md:justify-between mt-4">
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/Instagram.png" className="h-5 w-5"/>
+                        <img src="/Instagram.png" className="h-5 w-5 ml-2"/>
                     </a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <img src="/facebook.png" className="h-5 w-5 ml-2"/>
@@ -75,7 +75,13 @@ export default function Footer()
                     <div className="col-sm-4">
                         <h6 className="text-xl font-bold mb-5">Our Latest News</h6>
                         <hr className="border-gray-600"/>
-                        <img src="/footer_Image.png" className="h-48 w-68 mt-10"/>
+                        <div className="flex flex-wrap w-full bg-gray-100 sm:py-16 sm:px-36 mt-10 rounded-3xl relative">
+                            <img alt="gallery" className="w-full object-cover h-full object-center rounded-3xl block absolute inset-0" src="./footer_Image.png"/>
+                            <div className="text-center relative z-10 w-full">
+                                <button type="button" className="items-center opacity-80 text-black font-bold rounded py-3 px-8 leading-6 bg-white">Read Now</button>
+                            </div>
+                        </div>
+                        {/* <img src="/footer_Image.png" className="h-48 w-68 mt-10"/> */}
                     </div>
                 </div>
 
