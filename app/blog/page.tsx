@@ -13,7 +13,7 @@ const Blog = () => {
 
 
   <section className="bg-white text-gray-900 body-font">
-  <div className="container px-44  mx-auto">
+  <div className="container sm:px-44 px-5 mx-auto">
     <div className="flex flex-col text-center w-full mb-24">
       <h1 className="sm:text-3xl mt-24 text-2xl font-bold title-font mb-4 text-gray-900">Blogs</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Get the latest articles from our journal, writing, discuss and share</p>
@@ -131,7 +131,7 @@ const Blog = () => {
 
 
 <section className="bg-white text-gray-900 body-font">
-  <div className="container px-44 mx-auto">
+  <div className="container sm:px-44 px-5 mx-auto">
     <div className="flex flex-wrap -m-4">
 
       <div className="p-4 mt-10 ">
@@ -174,7 +174,7 @@ const Blog = () => {
 
 
 <section className="bg-white text-gray-900 body-font">
-  <div className="container px-44 py-14 mx-auto">
+  <div className="container sm:px-44 px-5 py-14 mx-auto">
     <div className="flex flex-wrap -m-4">
 
       <div className="p-4">

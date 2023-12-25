@@ -233,7 +233,7 @@ const Features = () => {
 
 
   <section className="bg-[#303030] text-gray-100 body-font">
-  <div className="container px-48 py-12 mx-auto">
+  <div className="container sm:px-48 px-5 py-12 mx-auto">
     <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
       <div className="relative">
         <img alt="gallery" className="w-full object-cover h-72 absolute object-center" src="./wall_pattern.png"/>

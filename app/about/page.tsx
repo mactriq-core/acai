@@ -12,7 +12,7 @@ const About = () => {
       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Lorem ipsum dolor sit amet consectetur. Blandit consequat auctor penatibus id adipiscing phasellus a lacus scelerisque. Vulputate ipsum lectus leo nunc.</p>
     </div>
     <div className="flex flex-wrap mt-20 w-full">
-    <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="./chart.png" alt="step"/>
+    <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./chart.png" alt="step"/>
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 
         <div className="flex relative pb-12 mt-12">
@@ -79,7 +79,7 @@ const About = () => {
             <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
         </div>
       </div>
-      <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="./crm.png" alt="step"/>
+      <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./crm.png" alt="step"/>
     </div>
   </div>
   </section>
@@ -112,8 +112,8 @@ const About = () => {
 
 
 <section className="bg-white body-font">
-    <div className="container px-52 py-24 mx-auto">
-      <div className="bg-black rounded-lg p-8 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0 relative z-10 shadow-md">
+    <div className="container sm:px-52 py-24 mx-auto">
+      <div className="bg-black rounded-lg p-5 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0 relative z-10 shadow-md">
 
           <div className="container px-5 mt-8 flex flex-wrap mx-auto items-center">      
           <span className="inline-flex lg:mt-0 mt-6 justify-center md:justify-start md:w-auto">
@@ -282,7 +282,7 @@ const About = () => {
 
 
   <section className="bg-white body-font">
-  <div className="container px-52 py-24 mx-auto">
+  <div className="container sm:px-52 py-24 mx-auto">
     <div className="bg-gray-50 rounded-lg p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md">
 
       <div className="flex flex-col text-center w-full py-12">

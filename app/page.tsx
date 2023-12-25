@@ -15,20 +15,19 @@ export default function Home() {
 <section className="bg-white text-gray-600 body-font">
   <div className="container mx-auto flex flex-wrap">
     <div className="lg:w-full lg:h-full mx-auto">
-      <div className="flex flex-wrap w-full h-full bg-white py-52 relative">
-        <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./index.png"/>
-        <div className="px-40 text-left relative z-10 w-full">
-        {/* <div className="flex relative pb-12 mt-20"> */}
+      <div className="flex flex-wrap w-full h-full bg-white sm:py-52 px-5">
+        <img alt="gallery" className="w-full object-cover object-center block absolute inset-0 bg-white" src="./index.png"/>
+        {/* <div className="px-40 text-left relative z-10 w-full"> */}
+        <div className="sm:w-1/2 flex z-10 pb-12 mt-20 sm:px-40">
           <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-5xl text-gray-900 mb-1 tracking-wider">The Platform Your <br/>Whole Business <br/>Will Love</h2>
-            <p className="leading-relaxed mt-8 mb-10">Provide excellent customer service. Answer more tickets <br/>all-in-one Primarily software.</p>
+            <h2 className="font-bold title-font text-5xl text-gray-900 mb-1 tracking-wider">The Platform Your Whole Business Will Love</h2>
+            <p className="leading-relaxed mt-8 mb-10">Provide excellent customer service. Answer more tickets all-in-one Primarily software.</p>
             <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
             <button type="button" className="text-black rounded py-3 px-8 leading-6 bg-[#FFFFFF]">How It Work</button>
           </div>
-        {/* </div> */}
         </div>
+        {/* </div> */}
       </div>
-      
     </div>
   </div>
 </section>
@@ -38,11 +37,36 @@ export default function Home() {
 
 
 
+{/* <section className="bg-white text-gray-600 body-font">
+  <div className="container mx-auto flex flex-wrap">
+    <div className="lg:w-full lg:h-full mx-auto">
+      <div className="flex flex-wrap w-full h-full bg-white py-52 relative">
+        <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0" src="./index.png"/>
+        <div className="px-40 text-left relative z-10 w-full">
+        <div className="flex relative pb-12 mt-20">
+          <div className="flex-grow pl-4">
+            <h2 className="font-bold title-font text-5xl text-gray-900 mb-1 tracking-wider">The Platform Your <br/>Whole Business <br/>Will Love</h2>
+            <p className="leading-relaxed mt-8 mb-10">Provide excellent customer service. Answer more tickets <br/>all-in-one Primarily software.</p>
+            <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
+            <button type="button" className="text-black rounded py-3 px-8 leading-6 bg-[#FFFFFF]">How It Work</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> */}
+
+
+
+
+
+
 
 <section className="bg-white text-gray-900 body-font sm:px-48">
-  <div className="container px-5 py-24 mx-auto border-t border-gray-200">
-    <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">Explore Premium Features</h1>
+  <div className="container px-5 py-24 mx-auto ">
+    <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center border-t border-gray-200">
+      <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900 mt-10">Explore Premium Features</h1>
       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
     </div>
     <div className="flex flex-wrap -m-4">
@@ -90,7 +114,7 @@ export default function Home() {
   <section className="bg-white text-gray-900 body-font sm:px-28">
   <div className="container px-5 mx-auto flex flex-wrap">
     <div className="flex flex-wrap mt-20 w-full">
-    <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="./chart.png" alt="step"/>
+    <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./chart.png" alt="step"/>
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 
         <div className="flex relative pb-12 mt-12">
@@ -160,7 +184,7 @@ export default function Home() {
             <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
         </div>
       </div>
-      <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="./crm.png" alt="step"/>
+      <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./crm.png" alt="step"/>
     </div>
   </div>
   </section>
@@ -173,7 +197,7 @@ export default function Home() {
 
 
   <section className="bg-white text-gray-900 body-font sm:px-48">
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container px-5 py-20 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Trusted by more than 75 million users globally</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Unique and powerful suite of software to run your entire business, brought to you  transform the way you work.</p>
@@ -194,10 +218,10 @@ export default function Home() {
 
 
   <section className="bg-white body-font">
-    <div className="container px-52 py-24 mx-auto">
-      <div className="bg-black rounded-lg p-8 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0 relative z-10 shadow-md">
+    <div className="container sm:px-52 py-24 mx-auto">
+      <div className="bg-black rounded-lg p-8 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0  z-10 shadow-md">
 
-          <div className="container px-5 mt-8 flex flex-wrap mx-auto items-center">      
+          <div className="container px-5 mt-5 flex flex-wrap mx-auto items-center">      
           <span className="inline-flex lg:mt-0 mt-6 justify-center md:justify-start md:w-auto">
               <div className="relative sm:w-96 w-40 sm:mr-4 mr-2">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-3 text-white">Sell | Serve | Automate</h1>
@@ -367,7 +391,7 @@ export default function Home() {
 
 
 
-<section className="bg-white text-gray-900 body-font relative">
+<section className="bg-white text-gray-900 body-font ">
 <div className="py-24 mx-auto flex flex-wrap">
 {/* <div className="flex flex-wrap w-full"> */}
 
@@ -432,8 +456,33 @@ export default function Home() {
           <h2 className="font-bold title-font text-3xl text-gray-900 mb-1">The Perfect CRM Software: <br/>Boost Your Field Sales Team’s <br/>Efficiency</h2>
           <p className="leading-relaxed text-lg mt-7 mb-10 text-[#3BA3C8]">Depending on the Sales Approaches Standardize <br/>a Marketing Process</p>
           <p className="leading-relaxed text-sm mb-10">Unique and powerful suite of software to run your entire <br/>business, brought to you by a company.</p>
-            <a className="mt-3 text-indigo-500 inline-flex items-center">
-              <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/>
+            <a className="mt-3 sm:inline-flex mx-auto">
+              {/* <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/> */}
+              <button type="button" className="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded">
+                <div className="mr-3">
+                    <svg viewBox="0 0 384 512" width="30">
+                        <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div className="text-xs">Download on the</div>
+                    <div className="-mt-1 font-sans text-xl font-semibold">App Store</div>
+                </div>
+              </button>
+              <button type="button" className="sm:ml-3 flex items-center justify-center w-48 mt-3 text-white bg-black rounded h-14">
+                  <div className="mr-3">
+                      <svg viewBox="30 336.7 120.9 129.2" width="30">
+                          <path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"></path>
+                          <path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"></path>
+                          <path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"></path>
+                          <path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"></path>
+                      </svg>
+                  </div>
+                  <div>
+                      <div className="text-xs">GET IT ON</div>
+                      <div className="-mt-1 font-sans text-xl font-semibold">Google Play</div>
+                  </div>
+              </button>
             </a>
         </div>
       </div>
@@ -455,7 +504,7 @@ export default function Home() {
 
 
   <section className="bg-[#303030] text-gray-100 body-font">
-  <div className="container px-48 py-12 mx-auto">
+  <div className="container sm:px-48 px-5 py-12 mx-auto">
     <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
       <div className="relative">
         <img alt="gallery" className="w-full object-cover h-72 absolute object-center" src="./wall_pattern.png"/>
@@ -505,24 +554,24 @@ export default function Home() {
 
 
   <section className="bg-white">
-    <div className="container px-52 mx-auto">
-    <div className="flex flex-col text-center w-full py-20 px-40">
+    <div className="container sm:px-52 px-5 mx-auto">
+    <div className="flex flex-col text-center w-full py-20 ">
         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Deliver End-To-End Retail Billing & Solutions</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
     </div>
     {/* <div className="bg-gradient-to-r from-[#4FFFFF] to-[#4DDDDD] rounded-3xl p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md"> */}
-    <div className="bg-gradient-to-r mb-96 from-[#49DEFF] to-[#4FFFDF] rounded-3xl p-8 h-96 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md">
+    <div className="bg-gradient-to-r sm:mb-96 from-[#49DEFF] to-[#4FFFDF] rounded-3xl p-8 sm:h-96 flex flex-col md:ml-auto mt-10 md:mt-0  z-10 shadow-md">
         <div className="container px-5 py-8 mx-auto">
             <div className="flex flex-wrap -m-4">
             
             
-            <div className="p-4 xl:w-1/2 md:w-1/2">
-                <div className="flex items-center mb-1 px-12">
+            <div className="sm:p-4 xl:w-1/2 md:w-1/2 w-full mb-1">
+                <div className="flex items-center mb-1 sm:px-12">
                   <img src="./Starter.png" className="h-10 w-10 mr-2"/>
                   <h2 className="text-gray-900 text-lg title-font font-medium">Starter</h2>
                 </div>
                 
-                <div className="bg-white h-full p-6 px-12 rounded-3xl flex flex-col relative overflow-hidden shadow-md">
+                <div className="bg-white p-5 sm:px-12 rounded-3xl flex flex-col  overflow-hidden shadow-md">
                 {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2> */}
                 <h1 className="text-5xl font-bold text-gray-900 leading-none flex items-center">
                     <span>$45/Mo</span>
@@ -532,7 +581,7 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3 mt-4">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
-                    </span>Outbound email and <span className="font-bold">&nbsp;in-product</span>
+                    </span>Outbound email and&nbsp;<span className="font-bold">in-product</span>
                 </p>
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
@@ -542,7 +591,7 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
-                    </span><span className="font-bold text-[#FFB545]">Push messages &nbsp;</span> & notifications
+                    </span><span className="font-bold text-[#FFB545]">Push messages</span>&nbsp;& notifications
                 </p>
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
@@ -562,9 +611,9 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#D0D0D0",}} />
-                    </span><span className="font-bold">Multi-channel</span>&nbsp; campaigns
+                    </span><span className="font-bold">Multi-channel</span>&nbsp;campaigns
                 </p>
-                <p className="flex items-center text-gray-800">
+                <p className="flex items-center text-gray-800 mb-5">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#D0D0D0",}} />
                     </span>A/B testing & control groups
@@ -574,12 +623,12 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="p-4 xl:w-1/2 md:w-1/2 w-full">
-                <div className="flex items-center mb-1 px-12">
+            <div className="sm:p-4 xl:w-1/2 md:w-1/2 w-full">
+                <div className="flex items-center mb-1 sm:px-12">
                   <img src="./Professional.png" className="h-10 w-10 mr-2"/>
                   <h2 className="text-gray-900 text-lg title-font font-medium">Professional</h2>
                 </div>
-                <div className="bg-white h-full p-6 px-12 rounded-3xl flex flex-col relative overflow-hidden shadow-md">
+                <div className="bg-white p-5 sm:px-12 rounded-3xl flex flex-col  overflow-hidden shadow-md">
                 {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2> */}
                 <h1 className="text-5xl font-bold text-gray-900 leading-none flex items-center">
                     <span>$60/Mo</span>
@@ -591,7 +640,7 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3 mt-4">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
-                    </span>Outbound email and <span className="font-bold">&nbsp;in-product</span>
+                    </span>Outbound email and&nbsp;<span className="font-bold">in-product</span>
                 </p>
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
@@ -601,7 +650,7 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
-                    </span><span className="font-bold text-[#FFB545]">Push messages &nbsp;</span> & notifications
+                    </span><span className="font-bold text-[#FFB545]">Push messages</span>&nbsp;& notifications
                 </p>
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
@@ -621,7 +670,7 @@ export default function Home() {
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
-                    </span><span className="font-bold">Multi-channel</span>&nbsp; campaigns
+                    </span><span className="font-bold">Multi-channel</span>&nbsp;campaigns
                 </p>
                 <p className="flex items-center text-gray-800 mb-3">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
@@ -643,7 +692,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
                     </span><span className="font-bold">Custom reporting</span>
                 </p>
-                <p className="flex items-center text-gray-800">
+                <p className="flex items-center text-gray-800 mb-5">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-white text-white rounded-full flex-shrink-0">
                     <FontAwesomeIcon icon={faCheck} style={{color: "#2FCF3F",}} />
                     </span>Salesforce integration
@@ -659,7 +708,7 @@ export default function Home() {
     {/* </div> */}
 </div>
 
-    <div className="container px-48 py-24">
+    <div className="container sm:px-48 sm:py-32">
     <div className="rounded-lg overflow-hidden p-10 items-end justify-start relative">
       
     </div>

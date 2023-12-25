@@ -9,10 +9,10 @@ import { Fragment } from "react";
 
 const Header = () => {
   return (
-      <Popover className={"mx-auto flex items-center sm:px-12 px-6 py-2 h-24 bg-white"}>
-        <a href="/"><img src="/logo.png" width="50" height="50"></img></a>
-        <a href="/"><h1 className="font-bold">Accountant AI</h1></a>
-        <div className="grow">
+      <Popover className={"sticky z-50 mx-auto flex items-center sm:px-12 px-6 py-2 h-24"}>
+        <Link href="/"><img src="/logo.png" width="50" height="50"></img></Link>
+        <Link href="/"><h1 className="font-bold">Accountant AI</h1></Link>
+        <div className="grow bg-transparent">
           <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
             <Link href="about" className="font-bold">About</Link>
             <Link href="" className="font-bold">Services</Link>
@@ -26,7 +26,7 @@ const Header = () => {
 
         <div className="flex grow items-center justify-end sm:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
-          focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+          focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
             <span className="sr-only">Open menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
@@ -49,7 +49,7 @@ const Header = () => {
                 <h1 className="font-bold">Accountant AI</h1>
                 <div className="-mr-2">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
-                focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                   <span className="sr-only">Close menu</span>
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -65,6 +65,7 @@ const Header = () => {
                   <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="blog">Blog</Link>  
                   <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="early_access">Early Access</Link>
                   <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="pricing">Pricing</Link>
+                  <Link className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2 font-bold" href="contact">Contact</Link>
                 </nav>
               </div>
               

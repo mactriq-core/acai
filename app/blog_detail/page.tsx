@@ -13,7 +13,7 @@ const Blog_Detail = () => {
 
 
   <section className="bg-white text-gray-900 body-font">
-  <div className="container px-44 py-20 mx-auto">
+  <div className="container sm:px-44 px-5 py-20 mx-auto">
     <div className="flex flex-wrap -m-4">
 
       <div className="p-4">
@@ -59,14 +59,14 @@ const Blog_Detail = () => {
         <div className="border-opacity-60 rounded-3xl overflow-hidden shadow-md mb-10">
             <div className="p-5">
                 <div className="flex items-center justify-center">
-                    <div className="relative">
+                    {/* <div className="relative"> */}
                         <input type="text" className="border rounded-xl pl-4 pr-24 py-2 bg-[#EAEAEA] focus:outline-none focus:border-gray-500" placeholder="Search..."/>
                         <button className="absolute inset-y-0 right-0 px-3 py-2 text-gray-900 flex items-center">
                         <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                         </button>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@ const Blog_Detail = () => {
 
 
 <section className="bg-white text-gray-800 body-font">
-  <div className="container px-48 mx-auto flex flex-wrap">
+  <div className="container sm:px-44 px-5 mx-auto flex flex-wrap">
     <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 item-center">
     
     <div className="bg-gradient-to-r from-[#7CE7FF] to-[#82FEE9] p-4 py-24 flex flex-col rounded-3xl text-center items-center">
@@ -204,28 +204,28 @@ const Blog_Detail = () => {
     <h1 className="font-bold text-3xl mb-10">Leave a Comments</h1>
       <div className="flex flex-wrap -m-2">
         <div className="p-2 w-1/2">
-          <div className="relative">
+          {/* <div className="relative"> */}
             <label htmlFor="name" className="leading-7 text-sm text-gray-800">Full name *</label>
             <input type="text" id="name" name="name" placeholder="John David" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-          </div>
+          {/* </div> */}
         </div>
         <div className="p-2 w-1/2">
-          <div className="relative">
+          {/* <div className="relative"> */}
             <label htmlFor="email" className="leading-7 text-sm text-gray-800">Your email *</label>
             <input type="email" id="email" name="email" placeholder="example@yourmail.com" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-          </div>
+          {/* </div> */}
         </div>
         <div className="p-2 w-full">
-          <div className="relative">
+          {/* <div className="relative"> */}
             <label htmlFor="email" className="leading-7 text-sm text-gray-800">Website *</label>
             <input type="email" id="email" name="email" placeholder="your website address here" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-          </div>
+          {/* </div> */}
         </div>
         <div className="p-2 w-full">
-          <div className="relative">
+          {/* <div className="relative"> */}
             <label htmlFor="message" className="leading-7 text-sm text-gray-800">Message *</label>
             <textarea id="message" name="message" placeholder="Hello there,I would like to talk about how to..." className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 h-52 text-base outline-none text-gray-800 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
+          {/* </div> */}
         </div>
         <div className="p-2 w-full">
             <input type="checkbox" id="comment" name="comment" value="save my name, email, and website in this browser for the next time I comment."/>
