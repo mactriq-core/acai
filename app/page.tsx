@@ -1,33 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import Script from "next/script";
+// import Script from "next/script";
+import { hotjar } from "react-hotjar";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+  hotjar.initialize(3806906, 6);
+
+  hotjar.identify("USER_ID", { userProperty: "" });
+  hotjar.event("button-click");
+  hotjar.stateChange("/");
+
+  if (hotjar.initialized()) {
+    hotjar.identify("USER_ID", { userProperty: "value" });
+  }
+
   return (
     <React.Fragment>
-      <Script
-        id="gasiuf7et3y3eibie"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `Script
-        id="gasiuf7et3y3eibie"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{__html: (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3806906,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')}
-      />`,
-        }}
-      />
       <section className="bg-white text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap">
           <div className="lg:w-full lg:h-full mx-auto">
