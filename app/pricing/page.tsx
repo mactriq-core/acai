@@ -3,7 +3,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+
 
 const Pricing = () => {
   return (
@@ -15,6 +15,7 @@ const Pricing = () => {
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur. Ultrices eleifend dignissim sollicitudin cursus sed. Tellus sagittis mattis nulla elit. Porttitor maecenas sit vitae mi id lacinia arcu dictum.</p>
     </div>
 
+    </section>
 
 
 
@@ -180,10 +181,9 @@ const Pricing = () => {
 
 
 
-    
+<section className="text-gray-900 bg-white px-5 body-font">    
     <div className="container max-w-6xl mx-auto py-40">
     <div className="bg-gray-50 rounded-xl p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md">
-
       <div className="flex flex-col text-center w-full py-12">
         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Want To Contact Us</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Please fill up the information below to reach out to us.</p>
@@ -230,14 +230,12 @@ const Pricing = () => {
     </div>
     </div>
 
-
     {/* <div className="container px-48 py-24">
     <div className="rounded-lg overflow-hidden p-10 items-end justify-start relative">
       
     </div>
-  </div> */}
+    </div> */}
  
-    
   </section>
 
   </React.Fragment>
