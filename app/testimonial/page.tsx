@@ -17,7 +17,7 @@ const Testimonial = () => {
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur. Blandit consequat auctor penatibus id adipiscing phasellus a lacus scelerisque. Vulputate ipsum lectus leo nunc.</p>
     </div>
   
-  <div className="py-24 mx-auto flex flex-wrap">
+  <div className="sm:py-20 mx-auto flex flex-wrap">
     {/* <div className="flex flex-wrap w-full"> */}
 
       <div className="md:w-1/6 sm:mb-0 mb-6">
@@ -34,14 +34,14 @@ const Testimonial = () => {
       </div>
 
       <div className="md:py-6 md:w-1/3 sm:mb-0 mb-6">
-        <div className="flex relative pb-12">
+        <div className="flex relative sm:pb-12 mb-2">
           <div className="flex-grow pl-4">
             <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
             <p className="leading-relaxed">Unique and powerful suite of software to run your business, brought to you by  vision to you work.</p>
           </div>
         </div>
 
-        <div className="flex relative pb-12">
+        <div className="flex relative sm:pb-12 px-2 mb-3">
           <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
             <h1 className="font-bold text-2xl text-[#47CFFF]">01</h1>
           </div>
@@ -51,7 +51,7 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className="flex relative pb-12">
+        <div className="flex relative sm:pb-12 px-2 mb-3">
           <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
             <h1 className="font-bold text-2xl text-[#47CFFF]">02</h1>
           </div>
@@ -61,7 +61,7 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className="flex relative pb-12">
+        <div className="flex relative sm:pb-12 px-2">
           <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
             <h1 className="font-bold text-2xl text-[#47CFFF]">03</h1>
           </div>

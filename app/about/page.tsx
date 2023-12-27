@@ -15,14 +15,14 @@ const About = () => {
     <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./chart.png" alt="step"/>
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 
-        <div className="flex relative pb-12 mt-12">
+        <div className="flex relative sm:pb-12 mt-12">
           <div className="flex-grow pl-4">
             <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">Allocate Leads and Simplify Lead Management</h2>
             <p className="leading-relaxed py-5">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
           </div>
         </div>
 
-        <div className="flex relative pb-12 mt-5">
+        <div className="flex relative sm:pb-12 mt-5 px-4">
           <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#47CFFF] inline-flex items-center justify-center text-white relative z-10 mt-1">
           </div>
           <div className="flex-grow pl-4">
@@ -31,7 +31,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex relative pb-12 mt-5">
+        <div className="flex relative sm:pb-12 mt-5 px-4">
           <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#47CFFF] inline-flex items-center justify-center text-white relative z-10 mt-1">
           </div>
           <div className="flex-grow pl-4">
@@ -48,7 +48,7 @@ const About = () => {
 
 
 
-  <section className="bg-white text-gray-900 body-font sm:px-32">
+  <section className="bg-white text-gray-900 body-font sm:px-44">
   <div className="container px-5 mx-auto flex flex-wrap">
     <div className="flex flex-wrap mt-20 w-full">
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 flex flex-wrap">
@@ -75,7 +75,7 @@ const About = () => {
             <p className="leading-relaxed">Show off your goods in elegant product cards and mak.</p>
           </div>
         </div>
-        <div className="relative pb-12">
+        <div className="relative px-4 pb-12">
             <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button>
         </div>
       </div>
@@ -112,17 +112,17 @@ const About = () => {
 
 
 <section className="bg-white body-font">
-    <div className="container sm:px-52 py-24 mx-auto">
-      <div className="bg-black rounded-lg p-5 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0 relative z-10 shadow-md">
+    <div className="container sm:px-52 sm:py-24 mx-auto">
+      <div className="bg-black rounded-lg p-5 sm:mb-72 mb-5 flex flex-col md:ml-auto mt-10 h-96 md:mt-0  z-10 shadow-md">
 
-          <div className="container px-5 mt-8 flex flex-wrap mx-auto items-center">      
+          <div className="container px-5 mt-5 flex flex-wrap mx-auto items-center">      
           <span className="inline-flex lg:mt-0 mt-6 justify-center md:justify-start md:w-auto">
-              <div className="relative sm:w-96 w-40 sm:mr-4 mr-2">
+              <div className="relative sm:w-96  sm:mr-4 mr-2">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-3 text-white">Sell | Serve | Automate</h1>
               <p className="mx-auto leading-relaxed text-base text-white">Boost enrolment and manage student lifecycle with our 360° CRM</p>
               </div>
           </span>
-          <div className="flex md:flex-nowrap lg:ml-auto flex-wrap justify-center items-end md:justify-start">
+          <div className="flex md:flex-nowrap lg:ml-auto flex-wrap sm:justify-center items-end md:justify-start">
               <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
               <label htmlFor="footer-field" className="leading-7 text-sm text-white">*Your Business Email Address</label>
               <input type="text" id="footer-field" name="footer-field" placeholder="Email" className="w-full bg-white rounded focus:ring-2 text-base outline-none py-1 px-3 leading-8 ease-in-out"/>
@@ -282,7 +282,7 @@ const About = () => {
 
 
   <section className="bg-white body-font">
-  <div className="container sm:px-52 py-24 mx-auto">
+  <div className="container sm:px-48 px-5 mb-5 sm:py-24 mx-auto">
     <div className="bg-gray-50 rounded-lg p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md">
 
       <div className="flex flex-col text-center w-full py-12">

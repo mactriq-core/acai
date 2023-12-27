@@ -182,8 +182,8 @@ const Pricing = () => {
 
 
 
-<section className="text-gray-900 bg-white px-5 body-font">    
-    <div className="container max-w-6xl mx-auto py-40">
+<section className="text-gray-900 bg-white px-5 py-5 body-font">    
+    <div className="container max-w-6xl mx-auto sm:py-40">
     <div className="bg-gray-50 rounded-xl p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10 shadow-md">
       <div className="flex flex-col text-center w-full py-12">
         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Want To Contact Us</h1>

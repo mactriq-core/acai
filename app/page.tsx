@@ -21,7 +21,7 @@ export default function Home() {
         {/* <div className="px-40 text-left relative z-10 w-full"> */}
         <div className="sm:w-1/2 flex z-10 pb-12 mt-20 sm:px-40">
           <div className="flex-grow pl-4">
-            <h2 className="font-bold title-font text-5xl text-gray-900 mb-1 tracking-wider">The Platform Your Whole Business Will Love</h2>
+            <h2 className="font-bold title-font text-5xl text-gray-900 mb-1">The Platform Your Whole Business Will Love</h2>
             <p className="leading-relaxed mt-8 mb-10">Provide excellent customer service. Answer more tickets all-in-one Primarily software.</p>
             <Link href="early_access"><button type="button" className="text-white rounded py-3 px-6 leading-6 bg-[#303030]">Get Started</button></Link>
             <Link href="features"><button type="button" className="text-black rounded py-3 px-6 leading-6 bg-[#FFFFFF] ml-3 shadow-md">How It Work</button></Link>
@@ -65,7 +65,7 @@ export default function Home() {
 
 
 <section className="bg-white text-gray-900 body-font sm:px-48">
-  <div className="container px-5 py-24 mx-auto ">
+  <div className="container px-5 sm:py-24 mx-auto ">
     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center border-t border-gray-200">
       <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900 mt-10">Explore Premium Features</h1>
       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
@@ -118,14 +118,14 @@ export default function Home() {
     <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0" src="./chart.png" alt="step"/>
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 
-        <div className="flex relative pb-12 mt-12">
+        <div className="flex relative sm:pb-12 mt-12">
           <div className="flex-grow pl-4">
             <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">Allocate Leads and Simplify Lead Management</h2>
             <p className="leading-relaxed py-5">Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
           </div>
         </div>
 
-        <div className="flex relative pb-12 mt-5">
+        <div className="flex relative sm:pb-12 mt-5 px-4">
           <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#47CFFF] inline-flex items-center justify-center text-white relative z-10 mt-1">
           </div>
           <div className="flex-grow pl-4">
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex relative pb-12 mt-5">
+        <div className="flex relative sm:pb-12 mt-5 px-4">
           <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#47CFFF] inline-flex items-center justify-center text-white relative z-10 mt-1">
           </div>
           <div className="flex-grow pl-4">
@@ -181,7 +181,7 @@ export default function Home() {
             <p className="leading-relaxed">Show off your goods in elegant product cards and mak.</p>
           </div>
         </div>
-        <div className="relative pb-12">
+        <div className="relative px-4 pb-12">
             <Link href="early_access"><button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Get Started</button></Link>
         </div>
       </div>
@@ -219,17 +219,17 @@ export default function Home() {
 
 
   <section className="bg-white body-font">
-    <div className="container sm:px-52 py-24 mx-auto">
-      <div className="bg-black rounded-lg p-8 mb-72 flex flex-col md:ml-auto mt-10 h-96 md:mt-0  z-10 shadow-md">
+    <div className="container sm:px-52 sm:py-24 mx-auto">
+      <div className="bg-black rounded-lg p-5 sm:mb-72 mb-5 flex flex-col md:ml-auto mt-10 h-96 md:mt-0  z-10 shadow-md">
 
           <div className="container px-5 mt-5 flex flex-wrap mx-auto items-center">      
           <span className="inline-flex lg:mt-0 mt-6 justify-center md:justify-start md:w-auto">
-              <div className="relative sm:w-96 w-40 sm:mr-4 mr-2">
+              <div className="relative sm:w-96  sm:mr-4 mr-2">
               <h1 className="sm:text-3xl text-2xl font-bold title-font mb-3 text-white">Sell | Serve | Automate</h1>
               <p className="mx-auto leading-relaxed text-base text-white">Boost enrolment and manage student lifecycle with our 360° CRM</p>
               </div>
           </span>
-          <div className="flex md:flex-nowrap lg:ml-auto flex-wrap justify-center items-end md:justify-start">
+          <div className="flex md:flex-nowrap lg:ml-auto flex-wrap sm:justify-center items-end md:justify-start">
               <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
               <label htmlFor="footer-field" className="leading-7 text-sm text-white">*Your Business Email Address</label>
               <input type="text" id="footer-field" name="footer-field" placeholder="Email" className="w-full bg-white rounded focus:ring-2 text-base outline-none py-1 px-3 leading-8 ease-in-out"/>
@@ -393,7 +393,7 @@ export default function Home() {
 
 
 <section className="bg-white text-gray-900 body-font ">
-<div className="py-24 mx-auto flex flex-wrap">
+<div className="sm:py-24 mx-auto flex flex-wrap">
 {/* <div className="flex flex-wrap w-full"> */}
 
   <div className="md:w-1/6 sm:mb-0 mb-6">
@@ -410,14 +410,14 @@ export default function Home() {
   </div>
 
   <div className="md:py-6 md:w-1/3 sm:mb-0 mb-6">
-    <div className="flex relative pb-12">
+    <div className="flex relative sm:pb-12 mb-2">
       <div className="flex-grow pl-4">
         <h2 className="font-bold title-font text-3xl text-gray-900 mb-1 tracking-wider">How It Works</h2>
         <p className="leading-relaxed">Unique and powerful suite of software to run your business, brought to you by  vision to you work.</p>
       </div>
     </div>
 
-    <div className="flex relative pb-12">
+    <div className="flex relative sm:pb-12 px-2 mb-3">
       <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
         <h1 className="font-bold text-2xl text-[#47CFFF]">01</h1>
       </div>
@@ -427,7 +427,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="flex relative pb-12">
+    <div className="flex relative sm:pb-12 px-2 mb-3">
       <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
         <h1 className="font-bold text-2xl text-[#47CFFF]">02</h1>
       </div>
@@ -437,7 +437,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="flex relative pb-12">
+    <div className="flex relative sm:pb-12 px-2">
       <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
         <h1 className="font-bold text-2xl text-[#47CFFF]">03</h1>
       </div>

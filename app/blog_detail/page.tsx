@@ -4,7 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Blog_Detail = () => {
   return (
@@ -59,15 +59,20 @@ const Blog_Detail = () => {
         <div className="border-opacity-60 rounded-3xl overflow-hidden shadow-md mb-10">
             <div className="p-5">
                 <div className="flex items-center justify-center">
-                    {/* <div className="relative"> */}
+                    <div className="relative">
                         <input type="text" className="border rounded-xl pl-4 pr-24 py-2 bg-[#EAEAEA] focus:outline-none focus:border-gray-500" placeholder="Search..."/>
                         <button className="absolute inset-y-0 right-0 px-3 py-2 text-gray-900 flex items-center">
-                        <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        {/* <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
+                        </svg> */}
                         </button>
-                    {/* </div> */}
+                    </div>
                 </div>
+                {/* <div className="flex bg-[#EAEAEA] p-4 space-x-28 rounded-xl">
+                  <input className="bg-[#EAEAEA] outline-none" type="text" placeholder="Search..." />
+                  <FontAwesomeIcon icon={faMagnifyingGlass} className="h-5 w-5"/>
+                </div> */}
             </div>
         </div>
 

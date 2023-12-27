@@ -74,7 +74,7 @@ export default function Footer()
                         <div className="flex flex-wrap w-full py-16 sm:px-36 mt-10 mb-10 rounded-3xl relative">
                             <img alt="gallery" className="w-full object-cover h-full object-center rounded-2xl block absolute inset-0" src="./footer_Image.png"/>
                             <div className="text-center relative z-10 w-full">
-                                <button type="button" className="items-center opacity-80 text-black font-bold rounded py-3 px-8 leading-6 bg-white">Read Now</button>
+                                <Link href="about"><button type="button" className="items-center opacity-80 text-black font-bold rounded py-3 px-8 leading-6 bg-white">Read Now</button></Link>
                             </div>
                         </div>
                     </div>

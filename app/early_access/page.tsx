@@ -15,13 +15,13 @@ const Access = () => {
 
 
 
-    <div className="container max-w-6xl py-8 mx-auto">
+    <div className="container max-w-6xl sm:py-8 mx-auto">
       <div className="bg-black text-white rounded-xl p-8 flex flex-col md:ml-auto mt-10 md:mt-0  z-10 shadow-md">
 
         <div className="flex flex-col text-center w-full py-12">
           <h1 className="sm:text-9xl text-8xl font-bold title-font mb-10">Waiting ?</h1>
           <h1 className="text-5xl font-bold title-font mb-6">Get The Early Access</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue pretium faucibus leo nisl nulla pharetra nullam.</p>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base sm:px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue pretium faucibus leo nisl nulla pharetra nullam.</p>
         </div>
         
         <div className="mb-16">
@@ -34,7 +34,7 @@ const Access = () => {
 
 
     
-    <div className="container max-w-6xl py-32 mx-auto">
+    <div className="container sm:px-48 px-5 py-32 mx-auto">
     <div className="bg-gray-50 rounded-xl p-8 flex flex-col md:ml-auto mt-10 md:mt-0  z-10 shadow-md">
 
       <div className="flex flex-col text-center w-full py-12">

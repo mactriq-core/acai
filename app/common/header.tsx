@@ -75,7 +75,7 @@ const Header = () => {
         </Transition>
   
         <div className="hidden sm:px-12 sm:block px-6 py-7 h-24">
-          <button type="button" className="text-white rounded py-2 px-8 leading-6 bg-[#303030]"><Link href="contact">Contact</Link></button>
+        <Link href="contact"><button type="button" className="text-white rounded py-2 px-8 leading-6 bg-[#303030]">Contact</button></Link>
         </div>
       </Popover>
   );
