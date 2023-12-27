@@ -2,25 +2,20 @@
 
 import Link from "next/link";
 // import Script from "next/script";
-import { hotjar } from "react-hotjar";
-import React from "react";
+
+import React, { Suspense, lazy } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+const HotjarComponent = lazy(() => import("../components/HotJarComponent"));
+
 export default function Home() {
-  hotjar.initialize(3806906, 6);
-
-  hotjar.identify("USER_ID", { userProperty: "" });
-  hotjar.event("button-click");
-  hotjar.stateChange("/");
-
-  if (hotjar.initialized()) {
-    hotjar.identify("USER_ID", { userProperty: "value" });
-  }
-
   return (
     <React.Fragment>
+      <Suspense fallback={null}>
+        <HotjarComponent />
+      </Suspense>
       <section className="bg-white text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap">
           <div className="lg:w-full lg:h-full mx-auto">
