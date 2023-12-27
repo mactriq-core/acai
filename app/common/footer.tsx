@@ -23,11 +23,11 @@ export default function Footer()
                   <h6 className="text-[#ffffff6e] mt-4"><a href="/"><img src="/white_logo.png" className="h-8 w-66"/></a></h6>
                   <div className="md:flex md:justify-between">
                     <div className="md:flex md:justify-between mt-4">
-                        <Link href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} className="h-6 w-6"/></Link>
-                        <Link href="https://facebook.com"><FontAwesomeIcon icon={faSquareFacebook} className="h-6 w-6 ml-3"/></Link>
-                        <Link href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} className="h-6 w-6 ml-3"/></Link>
-                        <Link href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedinIn} className="h-6 w-6 ml-3"/></Link>   
-                        <Link href="https://youtube.com"><FontAwesomeIcon icon={faYoutube} className="h-6 w-6 ml-3"/></Link>     
+                        <Link href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} className="h-6 w-6"/></Link>
+                        <Link href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} className="h-6 w-6 ml-3"/></Link>
+                        <Link href="https://twitter.com" target="_blank"><FontAwesomeIcon icon={faTwitter} className="h-6 w-6 ml-3"/></Link>
+                        <Link href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} className="h-6 w-6 ml-3"/></Link>   
+                        <Link href="https://youtube.com" target="_blank"><FontAwesomeIcon icon={faYoutube} className="h-6 w-6 ml-3"/></Link>     
                     </div>
                   </div> 
                 </div>
@@ -64,8 +64,8 @@ export default function Footer()
                         <h5 className="mt-10"><Link href="">1700 W Blancke St, kiyev</Link></h5>
                         <h5 className="mt-2"><Link href="">port south USA, American</Link></h5>
                         <h5 className="mt-2"><Link href="">&nbsp;</Link></h5>
-                        <h5 className="mt-2"><Link href="">+3255 456 789</Link></h5>
-                        <h5 className="mt-2 mb-10"><Link href="">mail@primarily.com</Link></h5>
+                        <h5 className="mt-2"><Link href="tel:+3255456789">+3255 456 789</Link></h5>
+                        <h5 className="mt-2 mb-10"><Link href="mailto:mail@primarily.com">mail@primarily.com</Link></h5>
                     </div>
                     <div className="col-sm-4">
                         {/* <hr className="border-gray-600 sm:px-32"/>       */}

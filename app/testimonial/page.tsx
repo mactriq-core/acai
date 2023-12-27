@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -80,8 +81,9 @@ const Testimonial = () => {
               <h2 className="font-bold title-font text-3xl text-gray-900 mb-1">The Perfect CRM Software: <br/>Boost Your Field Sales Team’s <br/>Efficiency</h2>
               <p className="leading-relaxed text-lg mt-7 mb-10 text-[#3BA3C8]">Depending on the Sales Approaches Standardize <br/>a Marketing Process</p>
               <p className="leading-relaxed text-sm mb-10">Unique and powerful suite of software to run your entire <br/>business, brought to you by a company.</p>
-                <a className="mt-3 sm:inline-flex mx-auto">
+                <div className="mt-3 sm:inline-flex mx-auto">
                   {/* <img src="./app_store.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./google_play.png"/> */}
+                  <a href="https://www.apple.com/in/app-store/" target="_blank">
                   <button type="button" className="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded">
                     <div className="mr-3">
                         <svg viewBox="0 0 384 512" width="30">
@@ -93,6 +95,8 @@ const Testimonial = () => {
                         <div className="-mt-1 font-sans text-xl font-semibold">App Store</div>
                     </div>
                   </button>
+                  </a>
+                  <a href="https://play.google.com/store/" target="_blank">
                   <button type="button" className="sm:ml-3 flex items-center justify-center w-48 mt-3 text-white bg-black rounded h-14">
                       <div className="mr-3">
                           <svg viewBox="30 336.7 120.9 129.2" width="30">
@@ -107,7 +111,8 @@ const Testimonial = () => {
                           <div className="-mt-1 font-sans text-xl font-semibold">Google Play</div>
                       </div>
                   </button>
-                </a>
+                  </a>
+                </div>
             </div>
           </div>
           </div>
@@ -334,7 +339,7 @@ const Testimonial = () => {
                     </span>A/B testing & control groups
                 </p>
 
-                <button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button>
+                <Link href="early_access"><button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button></Link>
                 </div>
             </div>
 
@@ -413,7 +418,7 @@ const Testimonial = () => {
                     </span>Salesforce integration
                 </p>
 
-                <button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button>
+                <Link href="early_access"><button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button></Link>
                 </div>
             </div>
             

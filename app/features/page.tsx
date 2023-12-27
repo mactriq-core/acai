@@ -16,7 +16,7 @@ const Features = () => {
     <div className="flex flex-wrap -m-4">
 
       <div className="xl:w-1/3 md:w-1/2 p-4">
-        <div className="p-8 rounded-lg bg-[#F4F4F4]">
+        <div className="p-8 rounded-lg shadow-md hover:bg-[#F4F4F4]">
           <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
             <img src="./settings.png"/>
           </div>
@@ -26,7 +26,7 @@ const Features = () => {
       </div>
 
       <div className="xl:w-1/3 md:w-1/2 p-4">
-        <div className="p-8 rounded-lg shadow-md">
+        <div className="p-8 rounded-lg shadow-md hover:bg-[#F4F4F4]">
           <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
             <img src="./user.png"/>
           </div>
@@ -36,7 +36,7 @@ const Features = () => {
       </div>
 
       <div className="xl:w-1/3 md:w-1/2 p-4">
-        <div className="p-8 rounded-lg bg-[#F4F4F4]">
+        <div className="p-8 rounded-lg shadow-md hover:bg-[#F4F4F4]">
           <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4">
             <img src="./correct.png"/>
           </div>

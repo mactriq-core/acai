@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -81,7 +82,7 @@ const Pricing = () => {
                     </span>A/B testing & control groups
                 </p>
 
-                <button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button>
+                <Link href="early_access"><button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button></Link>
                 </div>
             </div>
 
@@ -160,7 +161,7 @@ const Pricing = () => {
                     </span>Salesforce integration
                 </p>
 
-                <button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button>
+                <Link href="early_access"><button className="items-center mt-auto text-black bg-gray-200 border-0 py-3 px-4 w-full focus:outline-none hover:bg-gray-800 hover:text-white rounded-lg">Get Started</button></Link>
                 </div>
             </div>
             

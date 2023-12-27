@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
@@ -45,7 +46,7 @@ const Blog = () => {
             <h1 className="title-font text-3xl font-bold text-gray-900 mb-5">6 Tips To Help You Build Your Social Media <br/>Effeciency & Better</h1>
             <p className="leading-relaxed mb-5">Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. <br/>ipsum dolor amet, consectetur adipiscing vestibulum ipsum primis in.</p>
             <div className="flex items-center flex-wrap ">
-              <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button>
+              <Link href="blog_detail"><button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button></Link>
             </div>
           </div>
         </div>
@@ -159,7 +160,7 @@ const Blog = () => {
             <h1 className="title-font text-3xl font-bold text-gray-900 mb-5">6 Tips To Help You Build Your Social Media <br/>Effeciency & Better</h1>
             <p className="leading-relaxed mb-5">Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. <br/>ipsum dolor amet, consectetur adipiscing vestibulum ipsum primis in.</p>
             <div className="flex items-center flex-wrap ">
-              <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button>
+              <Link href="blog_detail"><button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button></Link>
             </div>
           </div>
         </div>
@@ -202,7 +203,7 @@ const Blog = () => {
             <h1 className="title-font text-3xl font-bold text-gray-900 mb-5">6 Tips To Help You Build Your Social Media <br/>Effeciency & Better</h1>
             <p className="leading-relaxed mb-5">Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. <br/>ipsum dolor amet, consectetur adipiscing vestibulum ipsum primis in.</p>
             <div className="flex items-center flex-wrap ">
-              <button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button>
+              <Link href="blog_detail"><button type="button" className="text-white rounded py-3 px-8 leading-6 bg-[#303030]">Read More</button></Link>
             </div>
           </div>
         </div>
