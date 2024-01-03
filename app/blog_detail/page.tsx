@@ -1,17 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Blog_Detail = () => {
+
+
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [website,setWebsite] = useState('');
+  const [message,setMessage] = useState('');
+
+
+  const handleSubmit = () => {
+    if(name.length === 0){
+      alert("Name has left Blank!");
+    }
+    else if(email.length === 0){
+      alert("Email has left Blank!");
+    }
+    else if(website.length === 0){
+      alert("Website has left Blank!");
+    }
+    else{
+      const url = 'http://localhost/test/comment.php';
+      let fData = new FormData();
+      fData.append('name',name);
+      fData.append('email',email);
+      fData.append('website',website);
+      fData.append('message',message);
+      axios.post(url, fData).then(response=> alert(response.data)).catch(error=> alert(error));
+    }
+  }
+
+
+
   return (
   <React.Fragment>
-
-
-
   <section className="bg-white text-gray-900 body-font">
   <div className="container sm:px-44 px-5 py-20 mx-auto">
     <div className="flex flex-wrap -m-4">
@@ -207,29 +236,30 @@ const Blog_Detail = () => {
     <div className="container py-10 mx-auto">
     <div className="mx-auto">
     <h1 className="font-bold text-3xl mb-10">Leave a Comments</h1>
+    <form>
       <div className="flex flex-wrap -m-2">
         <div className="p-2 w-1/2">
           {/* <div className="relative"> */}
             <label htmlFor="name" className="leading-7 text-sm text-gray-800">Full name *</label>
-            <input type="text" id="name" name="name" placeholder="John David" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="John David" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           {/* </div> */}
         </div>
         <div className="p-2 w-1/2">
           {/* <div className="relative"> */}
             <label htmlFor="email" className="leading-7 text-sm text-gray-800">Your email *</label>
-            <input type="email" id="email" name="email" placeholder="example@yourmail.com" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="example@yourmail.com" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           {/* </div> */}
         </div>
         <div className="p-2 w-full">
           {/* <div className="relative"> */}
             <label htmlFor="email" className="leading-7 text-sm text-gray-800">Website *</label>
-            <input type="email" id="email" name="email" placeholder="your website address here" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="text" id="website" name="website" value={website} onChange={(e) => setWebsite(e.target.value)} placeholder="your website address here" className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-800 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           {/* </div> */}
         </div>
         <div className="p-2 w-full">
           {/* <div className="relative"> */}
             <label htmlFor="message" className="leading-7 text-sm text-gray-800">Message *</label>
-            <textarea id="message" name="message" placeholder="Hello there,I would like to talk about how to..." className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 h-52 text-base outline-none text-gray-800 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Hello there,I would like to talk about how to..." className="w-full bg-white rounded-xl border border-gray-300 focus:border-gray-500 h-52 text-base outline-none text-gray-800 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           {/* </div> */}
         </div>
         <div className="p-2 w-full">
@@ -237,9 +267,10 @@ const Blog_Detail = () => {
             <label htmlFor="comment" className="text-sm">&nbsp; save my name, email, and website in this browser for the next time I comment.</label>
         </div>
         <div className="p-2">
-          <button className="flex mx-auto text-white bg-[#303030] border-0 py-3 px-6 rounded mt-1">Post Comment</button>
+          <button type="submit" name="submit" id="submit" onClick={handleSubmit} className="flex mx-auto text-white bg-[#303030] border-0 py-3 px-6 rounded mt-1">Post Comment</button>
         </div>
       </div>
+      </form>
     </div>
   </div>
 

@@ -1,12 +1,48 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 
 const Pricing = () => {
+
+
+  const [first_name,setFirst_name] = useState('');
+  const [last_name,setLast_name] = useState('');
+  const [email,setEmail] = useState('');
+  const [subject,setSubject] = useState('');
+  const [message,setMessage] = useState('');
+
+
+  const handleSubmit = () => {
+    if(first_name.length === 0){
+      alert("First Name has left Blank!");
+    }
+    else if(last_name.length === 0){
+      alert("Last Name has left Blank!");
+    }
+    else if(email.length === 0){
+      alert("Email has left Blank!");
+    }
+    else if(subject.length === 0){
+      alert("Subject has left Blank!");
+    }
+    else{
+      const url = 'http://localhost/test/formsubmit.php';
+      let fData = new FormData();
+      fData.append('first_name',first_name);
+      fData.append('last_name',last_name);
+      fData.append('email',email);
+      fData.append('subject',subject);
+      fData.append('message',message);
+      axios.post(url, fData).then(response=> alert(response.data)).catch(error=> alert(error));
+    }
+  }
+
+
   return (
     <React.Fragment>
     <section className="text-gray-900 bg-white px-5 body-font">
@@ -190,42 +226,29 @@ const Pricing = () => {
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Please fill up the information below to reach out to us.</p>
       </div>
       <div className="md:w-2/3 mx-auto mb-12">
+      <form>
         <div className="flex flex-wrap -m-2">
           <div className="p-2 w-1/2">
-            {/* <div className="relative"> */}
-              {/* <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label> */}
-              <input type="text" id="name" name="name" placeholder="FIRST NAME" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-            {/* </div> */}
+              <input type="text" name="first_name" id="first_name" value={first_name} onChange={(e) => setFirst_name(e.target.value)} placeholder="FIRST NAME" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
           <div className="p-2 w-1/2">
-            {/* <div className="relative"> */}
-              {/* <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label> */}
-              <input type="email" id="email" name="email" placeholder="LAST NAME" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-            {/* </div> */}
+              <input type="text" name="last_name" id="last_name" value={last_name} onChange={(e) => setLast_name(e.target.value)} placeholder="LAST NAME" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
           <div className="p-2 w-1/2">
-            <div className="relative">
-              {/* <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label> */}
-              <input type="text" id="name" name="name" placeholder="EMAIL" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-            </div>
+              <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="EMAIL" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
           <div className="p-2 w-1/2">
-            {/* <div className="relative"> */}
-              {/* <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label> */}
-              <input type="email" id="email" name="email" placeholder="SUBJECT" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-            {/* </div> */}
+              <input type="text"  name="subject" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="SUBJECT" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 text-base outline-none text-gray-700 py-3 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
           <div className="p-2 w-full">
-            {/* <div className="relative"> */}
-              {/* <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label> */}
-              <textarea id="message" name="message" placeholder="ADD MESSAGE" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 h-32 text-base outline-none text-gray-700 py-3 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            {/* </div> */}
+              <textarea  name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="ADD MESSAGE" className="w-full bg-opacity-50 rounded-lg border border-gray-300 focus:bg-white focus:border-gray-500 h-32 text-base outline-none text-gray-700 py-3 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           </div>
           <div className="p-2 items-end flex w-full flex-col sm:space-x-4">
-            <div className=" flex-grow w-full"></div>
-            <button className="flex mx-auto text-white bg-[#303030] border-0 py-3 px-6 focus:outline-none rounded text-sm">Submit Now</button>
+            <div className="flex-grow w-full"></div>
+            <button type="submit" name="submit" id="submit" onClick={handleSubmit} className="flex mx-auto text-white bg-[#303030] border-0 py-3 px-6 focus:outline-none rounded text-sm">Submit Now</button>
           </div>
         </div>
+        </form>
       </div>
 
     </div>
